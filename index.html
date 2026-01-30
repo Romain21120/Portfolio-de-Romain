@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio — Lafaille Romain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- FOND ANIMÉ -->
+  <canvas id="bg"></canvas>
+
+  <!-- PARTICULES FLOTTANTES -->
+  <div class="particles"></div>
+
+  <!-- HERO / ACCUEIL -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="neon" data-text="Lafaille Romain">Lafaille Romain</h1>
+      <p class="subtitle">Étudiant ingénieur à l'ESTIA · Portfolio</p>
+    </div>
+  </header>
+
+  <!-- SECTION PROJETS -->
+  <section class="projects">
+    <h2 class="section-title" data-aos="fade-up">Projets</h2>
+
+    <div class="project-carousel">
+
+      <!-- PROJET 1 -->
+      <article class="project-card" data-link="project1.html">
+        <div class="project-image">
+          <img src="images/project1.jpg" alt="Projet 1">
+          <div class="overlay">
+            <span class="view-project">Voir le projet →</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Stage horloge Mecanique</h3>
+          <p>Mecanique</p>
+          <div class="tags">
+            <span class="tag">CAO</span>
+            <span class="tag">Archive</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJET 2 -->
+      <article class="project-card" data-link="project2.html">
+        <div class="project-image">
+          <img src="images/project2.jpg" alt="Projet 2">
+          <div class="overlay">
+            <span class="view-project">Voir le projet →</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Romain X Oihan barber</h3>
+          <p>Conception produit</p>
+          <div class="tags">
+            <span class="tag">CAO</span>
+            <span class="tag">Mecanique</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJET 3 -->
+      <article class="project-card" data-link="project3.html">
+        <div class="project-image">
+          <img src="images/project3.jpg" alt="Projet 3">
+          <div class="overlay">
+            <span class="view-project">Voir le projet →</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Projet 3</h3>
+          <p>Canvas & effets visuels</p>
+          <div class="tags">
+            <span class="tag">Canvas</span>
+            <span class="tag">WebGL</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJET 4 -->
+      <article class="project-card" data-link="project4.html">
+        <div class="project-image">
+          <img src="images/project4.jpg" alt="Projet 4">
+          <div class="overlay">
+            <span class="view-project">Voir le projet →</span>
+          </div>
+        </div>
+        <div class="project-info">
+          <h3>Projet 4</h3>
+          <p>Projet expérimental</p>
+          <div class="tags">
+            <span class="tag">React</span>
+            <span class="tag">3D</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- NAVIGATION CAROUSEL -->
+    <div class="carousel-nav">
+      <button class="nav-btn prev" aria-label="Projet précédent">←</button>
+      <div class="carousel-dots"></div>
+      <button class="nav-btn next" aria-label="Projet suivant">→</button>
+    </div>
+  </section>
+
+  <!-- SECTION À PROPOS ENRICHIE -->
+  <section class="about" id="about">
+    <h2 class="section-title" data-aos="fade-up">À propos</h2>
+    
+    <div class="about-container">
+      <!-- Photo de profil -->
+      <div class="profile-card" data-aos="fade-right">
+        <div class="profile-image-wrapper">
+          <div class="profile-glow"></div>
+          <img src="images/profile.jpg" alt="Lafaille Romain" class="profile-image">
+        </div>
+        <div class="profile-info">
+          <h3>Lafaille Romain</h3>
+          <p class="profile-role">Étudiant Ingénieur</p>
+          <div class="profile-details">
+            <div class="detail-item">
+              <span class="detail-icon">📍</span>
+              <span>Bidart, France</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">🎓</span>
+              <span>ESTIA</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-icon">💼</span>
+              <span>Disponible</span>
+            </div>
+          </div>
+          <a href="#" class="cv-button">
+            <span>Télécharger CV</span>
+            <span class="cv-icon">↓</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="bio-card" data-aos="fade-left">
+        <h3>Qui suis-je ?</h3>
+        <p>
+                    Interesse par la mecanique et l'ingenierie des systemes,
+          je m'attache a comprendre, concevoir et optimiser des structures et mecanismes complexes.
+          Etudiant en ingenierie a l'ESTIA, je m'oriente vers la mecanique et les systemes techniques,
+          avec un attrait pour l'aeronautique, la robotique et les projets concrets.
+        </p>
+        <p>
+          
+          Mon objectif est de combiner conception et ingenierie pour concevoir des projets techniques a fort impact.
+          J'aime explorer de nouveaux domaines, 
+          comprendre des systemes complexes et 
+          repousser les limites a travers des projets concrets et experimentaux.
+        </p>
+        
+        <div class="interests">
+          <h4>Centres d'intérêt</h4>
+          <div class="interest-tags">
+            <span class="interest-tag">⚙️ Mecanique</span>
+            <span class="interest-tag">📸 Photographie</span>
+            <span class="interest-tag">🚀 Nouvelles Technos</span>
+            <span class="interest-tag">🥊 Sport</span>
+            <span class="interest-tag">🪄 Blender</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION COMPÉTENCES -->
+  <section class="skills-section" id="skills">
+    <h2 class="section-title" data-aos="fade-up">Compétences</h2>
+    
+    <div class="skills-container">
+      <!-- Mecanique -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+        <div class="category-header">
+          <span class="category-icon">🧰​</span>
+          <h3>Mecanique</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Socle scientifique</span>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" data-progress="90"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>CAO</span>
+              <span class="skill-percentage">100%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" data-progress="85"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Dessin industriel</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" data-progress="75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Dev -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+        <div class="category-header">
+          <span class="category-icon">⚙️</span>
+          <h3>Developpement</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>HTML/CSS</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" data-progress="70"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Python</span>
+              <span class="skill-percentage">65%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" data-progress="65"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>SQL</span>
+              <span class="skill-percentage">60%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" data-progress="60"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logiciel -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+        <div class="category-header">
+          <span class="category-icon">🛠️</span>
+          <h3>Logiciel</h3>
+        </div>
+        <div class="skill-bars">
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Blender</span>
+              <span class="skill-percentage">70%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" data-progress="80"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Figma</span>
+              <span class="skill-percentage">60%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" data-progress="75"></div>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-info">
+              <span>Pack office</span>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="skill-progress">
+              <div class="skill-progress-fill" data-progress="60"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PARCOURS / TIMELINE -->
+  <section class="timeline-section" id="parcours">
+    <h2 class="section-title" data-aos="fade-up">Parcours</h2>
+    
+    <div class="timeline">
+      <!-- Item 1 -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024-2027 - Aujourd'hui</span>
+          <h3>ESTIA - École Supérieure des Technologies Industrielles Avancées</h3>
+          <p>Formation d'ingénieur généraliste avec Specialisation CNI "conception numerique et industrielle"</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Ingénierie</span>
+            <span class="timeline-tag">Mecanique</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Debut 2025</span>
+          <h3>Stage Horlogerie mécanique</h3>
+          <p>Dans le cadre de mon stage de première année à l'ESTIA, j'ai travaillé sur un projet de restauration et d'adaptation de machines mécaniques anciennes destinées à un usage pédagogique et scientifique. Ces machines, proches de mécanismes d'horlogerie, avaient été léguées à l'école et nécessitaient une analyse complète pour être comprises, documentées et remises en état.</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Mecanique</span>
+            <span class="timeline-tag">Stage</span>
+            <span class="timeline-tag">Teamwork</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2021 - 2023</span>
+          <h3>Classe Préparatoire TSI</h3>
+          <p>Formation intensive en mathématiques, physique et sciences de l'ingénieur</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Maths</span>
+            <span class="timeline-tag">Physique</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2021</span>
+          <h3>Baccalauréat Technologique</h3>
+          <p>Mention Bien - Spécialités ITEC</p>
+          <div class="timeline-tags">
+            <span class="timeline-tag">Mention Bien</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER AMÉLIORÉ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Footer Top -->
+      <div class="footer-top">
+        <div class="footer-col">
+          <h4>Lafaille Romain</h4>
+          <p>Étudiant ingénieur passionné par la mécannique et les nouvelles technologies.</p>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="contact-icon">📧</span>
+              <a href="mailto:contact@example.com">romain.lafaille@etu.estia.fr</a>
+            </li>
+            <li>
+              <span class="contact-icon">📱</span>
+              <span>+33 7 80 03 74 44</span>
+            </li>
+            <li>
+              <span class="contact-icon">📍</span>
+              <span>Bayonne, France</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Réseaux</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Email">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>Portfolio en constante évolution </p>
+        <p>© 2026 Lafaille Romain - Tous droits réservés</p>
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- CURSEUR CUSTOM -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+</html>
